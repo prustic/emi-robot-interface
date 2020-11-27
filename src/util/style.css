@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
+
+html,
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+body * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+a {
+  text-decoration: none;
+}
+
+.MuiFormLabel-root.Mui-focused {
+  color: #fff !important;
+}
+
+.MuiBaseInput-root {
+  color: #fff !important;
+}
+.MuiFormLabel-root {
+  color: #fff !important;
+}
+.MuiInputBase-input {
+  color: #fff !important;
+}
+.MuiInput-underline:after {
+  border-bottom: 2px solid #fff !important;
+}
+
+.MuiInput-underline {
+  border-bottom: 2px solid #fff !important;
+}
