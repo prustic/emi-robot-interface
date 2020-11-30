@@ -7,7 +7,7 @@ const FooterWrapper = styled.div`
   display: flex;
   flex-direction: row;
   position: absolute;
-  bottom: 0;
+  bottom: ${(props) => props.bottom};
   width: 90%;
   align-items: center;
   justify-content: flex-end;
@@ -24,9 +24,9 @@ const StyledHelpIcon = styled(HelpIcon)`
   margin-left: 25px;
   cursor: pointer;
 `;
-const Footer = () => {
+const Footer = ({ bottom }) => {
   return (
-    <FooterWrapper>
+    <FooterWrapper bottom={bottom}>
       <StyledEmergencyIcon fontSize="large" />
       <StyledHelpIcon fontSize="large" />
     </FooterWrapper>

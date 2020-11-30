@@ -4,6 +4,7 @@ html,
 body {
   margin: 0;
   font-family: "Nunito", sans-serif;
+  height: 100%;
 }
 body * {
   margin: 0;
@@ -37,4 +38,75 @@ a {
 
 .MuiInput-underline {
   border-bottom: 2px solid #fff !important;
+}
+
+.react-calendar {
+  width: 100% !important;
+  background: rgba(70, 85, 118, 0.8) !important;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 10px 10px 0px 0px;
+  color: #fff !important;
+  font-family: "Montserrat" !important;
+}
+
+.react-calendar__navigation__label__labelText {
+  color: #fff !important;
+  font-family: "Montserrat" !important;
+}
+
+.react-calendar__tile {
+  color: #fff;
+  font-family: "Montserrat" !important;
+  transition: 0.5s;
+}
+.react-calendar__tile:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: #fff;
+}
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.react-calendar__navigation__arrow {
+  color: #fff !important;
+  transition: 0.5s;
+}
+
+.react-calendar__tile--now {
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.6) !important;
+}
+
+.react-calendar__tile--active {
+  background: #7785a5 !important;
+  border-radius: 5px;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #77dd77;
+  font-weight: 500 !important;
+}
+
+.react-calendar__navigation__arrow:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: #fff;
+}
+.react-calendar__navigation__label {
+  transition: 0.5s;
+}
+.react-calendar__navigation__label:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: #fff;
+}
+
+.MuiCheckbox-root {
+  color: #fff !important;
+}
+.MuiTimelineContent-root {
+  color: #fff !important;
+  font-family: 'Montserrat' !important;
+}
+
+.MuiTimelineDot-defaultGrey {
+  background: #7785a5 !important;
 }

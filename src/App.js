@@ -1,12 +1,13 @@
+import AppRouter from "./AppRouter";
 import "./util/style.css";
-
-const { default: Home } = require("./pages/Home");
+import { BrowserRouter as Router} from "react-router-dom";
 
 function App() {
+
   return (
-    <div>
-      <Home />
-    </div>
+    <Router>
+      <AppRouter />
+    </Router>
   );
 }
 

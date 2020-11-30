@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import NotificationsIcon from '@material-ui/icons/Notifications';
+import { Link } from "react-router-dom";
 
-const NotificationWrapper = styled.div`
+const NotificationWrapper = styled(Link)`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,8 +25,8 @@ const StyledArrow = styled(NotificationsIcon)`
 `;
 const Notifications = () => {
   return (
-    <NotificationWrapper>
-      You have 5 notifications.
+    <NotificationWrapper to="/notifications">
+      You have 4 notifications.
       <StyledArrow fontSize="normal" />
     </NotificationWrapper>
   );

@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^4.11.1",
     "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -12,6 +13,7 @@
     "moment": "^2.29.1",
     "moment-timezone": "^0.5.32",
     "react": "^17.0.1",
+    "react-calendar": "^3.2.1",
     "react-dom": "^17.0.1",
     "react-live-clock": "^5.0.13",
     "react-moment": "^1.0.0",
@@ -19,6 +21,8 @@
     "react-scripts": "4.0.1",
     "react-use": "^15.3.4",
     "styled-components": "^5.2.1",
+    "use-react-router": "^1.0.7",
+    "victory": "^35.4.0",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -44,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3"
   }
 }

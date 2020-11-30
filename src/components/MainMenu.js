@@ -103,7 +103,7 @@ const Button = styled.div`
   }
 `;
 
-const MainMenu = () => {
+const MainMenu = ({welcomeScreen}) => {
   const [welcome, setWelcome] = React.useState(true);
   const { width } = useWindowSize();
   const WelcomePhrases = [
@@ -112,7 +112,6 @@ const MainMenu = () => {
     "Good evening",
     "Welcome back",
     "Hello",
-    "A mi arunk",
   ];
   const WelcomeSubtitles = [
     "How can I help you today?",
@@ -123,11 +122,11 @@ const MainMenu = () => {
   ];
   return (
     <MenuContainer>
-      {welcome ? (
+      {welcome && welcomeScreen ? (
         <MenuWelcomer>
           <MenuTitle>
             {WelcomePhrases[Math.floor(Math.random() * WelcomePhrases.length)] +
-              ", Emi."}
+              ", Martijn."}
           </MenuTitle>
           <MenuSubtitle>
             {
@@ -161,14 +160,14 @@ const MainMenu = () => {
             <MenuWelcomer>
               <MenuTitle>
                 <Clock
-                  format={"HH:MM:ss"}
+                  format={"HH:mm:ss"}
                   ticking={true}
                   timezone={"Europe/Zagreb"}
                 />
               </MenuTitle>
               <MenuOptions />
             </MenuWelcomer>
-            <Footer />
+            <Footer bottom="0" />
         </>
       )}
     </MenuContainer>

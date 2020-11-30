@@ -15,7 +15,7 @@ const animate = keyframes`
 const AnimatedBackground = styled.div`
   background: linear-gradient(to left, #7785a5, #465576);
   width: 100%;
-  height: 100vh;
+  height: ${props => props.height};
   position: absolute;
 `;
 const BoxItem = styled.li`
@@ -76,9 +76,9 @@ const BoxArea = styled.ul`
   }
 `;
 
-const Background = () => {
+const Background = ({height}) => {
   return (
-    <AnimatedBackground>
+    <AnimatedBackground height={height}>
       <BoxArea>
         {_.times(5, (index) => (
           <BoxItem key={index} />

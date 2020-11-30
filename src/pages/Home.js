@@ -14,11 +14,10 @@ class Home extends React.Component {
   componentDidMount() {
     setTimeout(() => this.setState(() => ({ showMenu: true })), 5000);
   }
-
   render() {
     return (
       <div>
-        <Background />
+        <Background height="100vh"/>
         {!this.state.showMenu ? <IntroScreen /> : <MainMenu />}
       </div>
     );
